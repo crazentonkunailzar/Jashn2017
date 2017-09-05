@@ -40,30 +40,42 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-7 col-xs-12">
                     <div class="header-content">
                         <div class="header-content-inner">
 				<h1><img src="jashan_sbs_2015_logo.png" width="74%"><br>The countdown begins</h1>
                     </div>
                 </div>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-5 col-xs-12">
 			<style>
 				#clock-outer {
-					height: 100vh;
+					height: 70vh;
+					text-align: center;
 				}
 				#clock {
 					position: absolute;
-					top: 40%;
+					top: 55%;
 				}
 				#clock h1 span {
-					padding: 5px 10px;
+					padding: 20px 15px;
+					font-family: "sans-serif";
+					border: 3px solid white;
+					border-radius: 100%;
+				}
+				@media all and (max-width: 768px) {
+					#clock {left: 30vw; top: 20%;}
+				}
+				@media all and (max-width: 360px) {
+					#clock-outer {height: 50vh;}
+					#clock {top: -10%;}
+					#clock h1 {font-size: 110%;}
 				}
 			</style>
 			<div id="clock-outer">
 				<div id="clock">
 					<table>
-						<h1><span id="days"></span> D <span id="hours"></span> H</h1><br>
+						<h1><span id="days"></span> D <span id="hours"></span> H</h1><br><br>
 						<h1><span id="minutes"></span> M <span id="seconds"></span> S</h1><br>
 					</table>
 				</div>
