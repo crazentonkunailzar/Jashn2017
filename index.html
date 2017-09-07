@@ -50,33 +50,49 @@
                 <div class="col-sm-5 col-xs-12">
 			<style>
 				#clock-outer {
-					height: 70vh;
+					height: 100vh;
 					text-align: center;
 				}
 				#clock {
 					position: absolute;
-					top: 55%;
+					top: 40%;
+					margin: 0 25%;
 				}
-				#clock h1 span {
-					padding: 20px 15px;
-					font-family: "sans-serif";
-					border: 3px solid white;
+				#clock h2 span {
+					padding: 15px;
+					font-family: sans-serif;
+					border: 1px solid white;
 					border-radius: 100%;
 				}
-				@media all and (max-width: 768px) {
-					#clock {left: 30vw; top: 20%;}
+				@media all and (max-width: 1200px) {
+					#clock{margin:0 15%;} 
+				}
+				@media all and (max-width: 767px) {
+					#clock{margin:0 35%;} 
+				}
+				@media all and (max-width: 718px) {
+					#clock{margin:0 30%;} 
+				}
+				@media all and (max-width: 540px) {
+					#clock{margin:0 25%;} 
+				}
+				@media all and (max-width: 432px) {
+					#clock{margin:0 20%;} 
 				}
 				@media all and (max-width: 360px) {
-					#clock-outer {height: 50vh;}
-					#clock {top: -10%;}
-					#clock h1 {font-size: 110%;}
+					#clock{margin:0 15%;} 
 				}
 			</style>
 			<div id="clock-outer">
 				<div id="clock">
 					<table>
-						<h1><span id="days"></span> D <span id="hours"></span> H</h1><br><br>
-						<h1><span id="minutes"></span> M <span id="seconds"></span> S</h1><br>
+						<h2>
+							<span id="days"></span> D 
+							<span id="hours"></span> H<br><br><br>
+							<span id="minutes"></span> M 
+							<span id="seconds"></span> S
+						</h2>
+						<br>
 					</table>
 				</div>
 			</div>
